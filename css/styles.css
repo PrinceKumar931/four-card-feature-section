@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.main-container {
+  width: 375px;
+  margin: 0 auto;
+}
+
+h1,
+.description {
+  text-align: center;
+}
+
+h1 {
+  font-size: 25px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  color: hsl(234, 12%, 34%);
+}
+
+header {
+  margin-bottom: 50px;
+  padding: 0 30px;
+}
+
+span {
+  font-weight: 200;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 13px;
+  padding: 0 10px;
+  line-height: 1.2rem;
+  color: hsl(229, 6%, 66%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.content-cards {
+  width: 347px;
+  padding: 20px;
+  border-style: none;
+  border-top: 4px solid;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 10px 20px -10px hsl(234, 12%, 34%);
+}
+
+.card-description {
+  font-weight: 400;
+  font-size: 11px;
+  padding-right: 42px;
+  margin-top: 10px;
+  color: hsl(229, 6%, 66%);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-2-1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-color: hsl(0, 78%, 62%);
+}
+
+.column-2-2 {
+  margin-top: 15px;
+  border-color: hsl(34, 97%, 64%);
+}
+
+.icons {
+  margin-left: 240px;
+  margin-top: 65px;
+  width: 50px;
+}
+
+.column-1-1 {
+  border-color: hsl(180, 62%, 55%);
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.column-3-1 {
+  border-color: hsl(212, 86%, 64%);
+  margin-top: 30px;
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.attribution a {
+  color: hsl(0, 78%, 62%);
+}
+
+@media screen and (min-width: 1440px) {
+  .main-container {
+    display: block;
+    position: inherit;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 950px;
+    padding-bottom: 50px;
+  }
+
+  .description {
+    padding: 0 490px;
+    margin-bottom: 40px;
+  }
+
+  .content-cards {
+    width: 290px;
+  }
+
+  .icons {
+    margin-left: 200px;
+    margin-top: 30px;
+  }
+}
